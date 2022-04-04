@@ -98,7 +98,7 @@ extern "C" {
         || ((p_reg == NRF_TIMER1) && TIMER_BIT_WIDTH_MAX(1, bit_width))   \
         || ((p_reg == NRF_TIMER2) && TIMER_BIT_WIDTH_MAX(2, bit_width))   \
         || ((p_reg == NRF_TIMER3) && TIMER_BIT_WIDTH_MAX(3, bit_width)))
-#elif (TIMER_COUNT == 5)
+#elif (TIMER_COUNT == 5) || (TIMER_COUNT == 6)
     #define NRF_TIMER_IS_BIT_WIDTH_VALID(p_reg, bit_width) (              \
            ((p_reg == NRF_TIMER0) && TIMER_BIT_WIDTH_MAX(0, bit_width))   \
         || ((p_reg == NRF_TIMER1) && TIMER_BIT_WIDTH_MAX(1, bit_width))   \
